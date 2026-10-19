@@ -1,0 +1,51 @@
+# ===== 敏感信息（严禁提交） =====
+.env
+**/config_secret.h
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ===== IDE =====
+.idea/
+.vscode/
+
+# ===== 运行产物 =====
+*.log
+reports/*.html
+uploads/pest/*
+smart_farm.db
+smart_farm.db-journal
+
+# ===== 模型文件（体积大，另行分发） =====
+models/*.pt
+models/*.pth
+
+# ===== Word 临时锁文件 =====
+~$*.docx
+~$*.doc
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+
+# ===== 毕业设计与过程文档（涉及论文查重，不公开）=====
+*.docx
+*.pdf
+*.mp4
+论文图表/
+
+# ===== 开发截图 =====
+_screenshot*.png
+_arduino_screenshot.png
+
+# ===== 根目录项目报告 HTML（templates/ 下 Flask 模板不受影响）=====
+智慧农业项目剖析报告.html
+智慧农业系统优化说明.html
+系统总体架构图.html
+
+# ===== ESP32 构建产物 =====
+esp32_firmware/**/build/

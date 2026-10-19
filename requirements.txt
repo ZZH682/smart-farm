@@ -1,0 +1,20 @@
+paho-mqtt==1.6.1
+flask==3.0.0
+flask-socketio==5.3.6
+python-socketio>=5.0.2
+python-engineio>=4.13.2
+Pillow>=9.0.0
+# 温度预测模块必需（temp_forecast.py 顶层 import numpy，缺省会直接启动崩溃）
+numpy>=1.21.0
+
+# ===== 可选依赖（启用高精度识别/预测时安装） =====
+# EfficientNet-B0 病虫害分类（首选，PlantVillage 38类，准确率 97%+）
+# 需下载模型到 models/efficientnet_plant_best.pth 和 models/class_names.json
+# timm>=0.9.0
+# torch>=2.0.0
+# torchvision>=0.15.0
+# YOLOv8 病虫害识别（第二选择，检测模型）
+# 需下载模型到 models/pest_yolov8n.pt
+# ultralytics>=8.0.0
+# 产量预测机器学习模型（积累历史数据后用于训练）
+# scikit-learn>=1.0.0
